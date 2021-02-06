@@ -1,0 +1,28 @@
+body{
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-size: 23px;
+    background-color: bisque;
+    color: saddlebrown;
+}
+
+div{
+    float: left;
+    line-height: 70px;
+    font-size: 25px;
+    background-color: darksalmon;
+    color: saddlebrown;
+    margin-top: 60px;
+    width: 320px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+h1{
+    font-weight: bolder;
+    text-align: center;
+}
+
+p{
+    margin-left: 60px;
+    margin-right: 10px;
+}
