@@ -1,20 +1,35 @@
 body{
-    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
     font-size: 23px;
     background-color: bisque;
     color: saddlebrown;
 }
 
-div{
+.aligned{
+    width: 840px;
+    height: 800px;
+    margin: 0px auto;
+}
+
+.logo{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.block{
     float: left;
-    line-height: 70px;
-    font-size: 25px;
+    line-height: 50px;
+    font-size: 20px;
     background-color: darksalmon;
     color: saddlebrown;
-    margin-top: 60px;
-    width: 320px;
-    margin-right: 10px;
+    width: 200px;
+    margin-right: 5px;
+    margin-left: 5px;
     text-align: center;
+}
+
+.navigation{
+    height: 50px;
 }
 
 h1{
