@@ -41,3 +41,35 @@ p{
     margin-left: 60px;
     margin-right: 10px;
 }
+
+.foot{
+    margin: 150px;
+    font-size: medium;
+    text-align: center;
+}
+
+.description{
+    text-align: center;
+    margin: 100px;
+    font-size: 30px;
+}
+
+.folders{
+    height: 300px;
+    position: relative;
+    float: contour;
+    left: 12%;
+
+}
+
+.folder{
+     float: left;
+    line-height: 50px;
+    font-size: 20px;
+    background-color: darksalmon;
+    color: saddlebrown;
+    width: 200px;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
