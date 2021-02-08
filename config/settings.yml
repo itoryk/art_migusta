@@ -1,0 +1,5 @@
+heroku:
+  HOST: "https://art-migusta-web.herokuapp.com"
+  MODE_DEBUG: false
+  REQUEST_TTL: 10
+  VENV_SYNTHETIC: true
