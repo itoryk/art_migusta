@@ -104,3 +104,34 @@ h1{
 .comment-time{
     font-size: 10px;
 }
+
+form{
+    background: darksalmon;
+    float: contour;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+}
+
+label, span{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+input[type="name"], input[type="text"]{
+    border-width: 1px;
+    outline: none;
+    margin: 0;
+    width: 100%;
+    padding: 10px 5px;
+}
+
+button{
+    padding: 10px;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    margin: 25px auto 0;
+    text-transform: uppercase;
+}
+
