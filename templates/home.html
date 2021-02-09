@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>migusta_art</title>
+    <link href="{% static 'css/stylesheet.css'%}" rel= "stylesheet"/>
+    <link href="{% static 'img/logo.jpg'%}" rel="icon" type="image/jpg"/>
+</head>
+
+<body>
+    <div class="aligned">
+        <div class="logo">
+            <h1>Арт Территория</h1>
+        </div>
+        <div class="navigation">
+            <div class="block">Главная</div>
+            <div class="block">Иллюстрации</div>
+            <div class="block">Как заказать</div>
+            <div class="block">Отзывы</div>
+        </div>
+        <div class="greeting">
+            <p>Привет, я Надя! Добро пожаловать в мой творческий мир. Я создаю иллюстрации к детским книгам, а также для вас и вашей семьи.</p>
+            <center><img alt = "logo" width="630" src="{% static 'img/logo.jpg'%}"></center>
+        </div>
+        <div class="foot">2021 Migusta_art</div>
+
+    </div>
+</body>
+</html>
