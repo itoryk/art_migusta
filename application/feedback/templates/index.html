@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Отзывы{% endblock %}
+
+{% block main %}
+
+    <div class="feedback">
+        <p>Здесь вы можете оставить свой отзыв.</p>
+    </div>
+
+    <div class="comment">
+        <p class="comment-name">Valera</p>
+        <p class="comment-time">Feb, 3, 12:01</p>
+        <p class="comment-text">vse horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno </p>
+    </div>
+
+    <div class="comment">
+        <p class="comment-name">Iren</p>
+        <p class="comment-time">Feb, 7, 14:08</p>
+        <p class="comment-text">vse horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno </p>
+    </div>
+
+    <div class="comment">
+        <p class="comment-name">Katyuha</p>
+        <p class="comment-time">Feb, 15, 12:08</p>
+        <p class="comment-text">vse horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno </p>
+    </div>
+
+    <form>
+        <div>
+            <label for="name">Имя</label>
+            <input type="text" name="name" required>
+        </div>
+        <div>
+            <label for="text">Отзыв</label>
+            <input type="text" required>
+        </div>
+        <button type="submit">Отправить</button>
+    </form>
+
+{% endblock %}
