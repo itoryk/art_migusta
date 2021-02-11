@@ -10,7 +10,12 @@ SECRET_KEY = '2qgwz%(uyv+s-thk*$&$^pcq7w2dzkj48eq6!_tjvi$b8%8#c6'
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    dyn.HOST,
+]
+
 
 
 
