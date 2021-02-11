@@ -1,0 +1,30 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "==20.8b1"
+httpie = "*"
+ipython = "*"
+isort = "*"
+pudb = "*"
+pytest = "*"
+pytest-mock = "*"
+pytest-selenium = "*"
+colorama = "*"
+delorean = "*"
+dj-database-url = "*"
+
+[packages]
+dynaconf = { extras = ["yaml"], version = "*" }
+gunicorn = "*"
+pydantic = "*"
+psycopg2-binary = "*"
+django = "*"
+whitenoise = "*"
+sentry-sdk = "*"
+ordering = "*"
+
+[requires]
+python_version = "3.8"
