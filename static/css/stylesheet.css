@@ -42,6 +42,14 @@ h1{
     margin-right: 10px;
 }
 
+.headings {
+    font-size: 20px;
+    width: 200px;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+
 .foot{
     margin: 150px;
     font-size: medium;
