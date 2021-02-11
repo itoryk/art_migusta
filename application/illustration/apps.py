@@ -2,4 +2,5 @@ from django.apps import AppConfig
 
 
 class IllustrationConfig(AppConfig):
-    name = 'application.illustration'
+    label = "illustration"
+    name = f"application.{label}"

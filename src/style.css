@@ -135,3 +135,9 @@ button{
     text-transform: uppercase;
 }
 
+.link{
+    background-color: darksalmon;
+    color: saddlebrown;
+    width: 200px;
+    text-align: center;
+}

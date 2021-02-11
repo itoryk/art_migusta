@@ -14,10 +14,12 @@
             <h1>Арт Территория</h1>
         </div>
         <div class="navigation">
-            <div class="block">Главная</div>
-            <div class="block">Иллюстрации</div>
-            <div class="block">Как заказать</div>
-            <div class="block">Отзывы</div>
+            <div class="link">
+                <div class="block"><a href="{% url 'landing:index' %}">Главная</a></div>
+                <div class="block"><a href="{% url 'illustration:index' %}">Иллюстрации</a></div>
+                <div class="block"><a href="#">Как заказать</a></div>
+                <div class="block"><a href="#">Отзывы</a></div>
+            </div>
         </div>
 
         {% block main %}{% endblock %}
