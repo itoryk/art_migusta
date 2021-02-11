@@ -119,6 +119,6 @@ DIR_PROJECT = _this_file.parent.resolve()
 
 DIR_SRC = DIR_PROJECT.parent.resolve()
 
-DIR_REPO = DIR_SRC.parent.resolve()
+DIR_REPO = DIR_SRC
 
 STATIC_ROOT = DIR_REPO / ".static"
