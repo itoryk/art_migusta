@@ -2,4 +2,7 @@ from django.apps import AppConfig
 
 
 class OrderConfig(AppConfig):
-    name = 'application.order'
+    label = "order"
+    name = f'application.{label}'
+
+

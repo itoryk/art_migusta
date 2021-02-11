@@ -24,6 +24,8 @@ INSTALLED_APPS = [
 
     'application.landing.apps.LandingConfig',
     'application.illustration.apps.IllustrationConfig',
+    'application.order.apps.OrderConfig',
+    'application.feedback.apps.FeedbackConfig',
 ]
 
 MIDDLEWARE = [
