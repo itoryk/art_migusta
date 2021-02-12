@@ -109,15 +109,6 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.1/howto/static-files/
-
-STATIC_URL = '/static/'
-
-STATICFILES_DIRS=[
-    os.path.join(BASE_DIR, "static")
-]
-
 _this_file = Path(__file__).resolve()
 
 DIR_PROJECT = _this_file.parent.resolve()
@@ -125,6 +116,15 @@ DIR_PROJECT = _this_file.parent.resolve()
 DIR_SRC = DIR_PROJECT.parent.resolve()
 
 DIR_REPO = DIR_SRC
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.1/howto/static-files/
+
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR, "art_migusta\static")
+]
 
 STATIC_ROOT = DIR_REPO / ".static"
 
