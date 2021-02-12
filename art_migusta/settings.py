@@ -123,7 +123,7 @@ DIR_REPO = DIR_SRC
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS=[
-    os.path.join(BASE_DIR, "art_migusta\static")
+    os.path.join(BASE_DIR, "art_migusta/static")
 ]
 
 STATIC_ROOT = DIR_REPO / ".static"
