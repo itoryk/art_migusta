@@ -127,3 +127,9 @@ DIR_SRC = DIR_PROJECT.parent.resolve()
 DIR_REPO = DIR_SRC
 
 STATIC_ROOT = DIR_REPO / ".static"
+
+STATIC_URL = "/s/"
+
+STATICFILES_DIRS = [
+    DIR_PROJECT / "static",
+]
