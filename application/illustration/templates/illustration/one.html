@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Иллюстрации{% endblock %}
+
+{% block main %}
+    <img alt = "logo" width="200" src="{% static 'image/one.jpg' %}">
+    <img alt = "logo" width="200" src="{% static 'image/one2.jpg' %}">
+    <img alt = "logo" width="200" src="{% static 'image/one3.jpg' %}">
+{% endblock %}
