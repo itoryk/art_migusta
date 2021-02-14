@@ -1,3 +1,8 @@
 from django.db import models
 
 # Create your models here.
+
+
+class FeedbackModel(models.Model):
+    name = models.CharField(max_length=30)
+    comment = models.CharField(max_length=400)
