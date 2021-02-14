@@ -16,17 +16,13 @@
         <p class="comment-text">vse horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebn </p>
     </div>
 
-    <div class="comment">
-        <p class="comment-name">Iren</p>
-        <p class="comment-time">Feb, 7, 14:08</p>
-        <p class="comment-text">vse horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno</p>
-    </div>
-
-    <div class="comment">
-        <p class="comment-name">Katyuha</p>
-        <p class="comment-time">Feb, 15, 12:08</p>
-        <p class="comment-text">vse horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno </p>
-    </div>
+    {% for object in object_list %}
+        <div class="comment">
+            <p class="comment-name">{{ object.name }}</p>
+            <p class="comment-time">Feb, 3, 12:01</p>
+            <p class="comment-text">{{ object.comment }}</p>
+        </div>
+    {% endfor %}
 
     <form method="post" action="{{ form_action_url }}">
         {% csrf_token %}
