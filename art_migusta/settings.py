@@ -31,6 +31,8 @@ INSTALLED_APPS = [
     'application.illustration.apps.IllustrationConfig',
     'application.order.apps.OrderConfig',
     'application.feedback.apps.FeedbackConfig',
+    'application.likes.apps.LikesConfig',
+    'application.tweets.apps.TweetsConfig',
 ]
 
 MIDDLEWARE = [

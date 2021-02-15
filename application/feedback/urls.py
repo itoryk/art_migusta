@@ -6,5 +6,6 @@ from application.feedback.apps import FeedbackConfig
 app_name = FeedbackConfig.label
 
 urlpatterns = [
-    path("", views.FeedbackView2.as_view(), name="index")
+    path("", views.FeedbackView.as_view(), name="index"),
+    path("new/", views.NewFeedbackView.as_view())
 ]

@@ -24,7 +24,7 @@
         </div>
     {% endfor %}
 
-    <form method="post" action="{{ form_action_url }}">
+    <form method="post" action="/feedback/new/">
         {% csrf_token %}
         <div>
             {{ form.content }}

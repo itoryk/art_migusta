@@ -3,6 +3,7 @@ from django.views.generic import FormView
 from application.feedback.models import FeedbackModel
 from django.forms import ModelForm, CharField
 from django.views.generic import ListView
+from django.views.generic import CreateView
 
 import abc
 from typing import Dict
@@ -19,41 +20,32 @@ class ExtendedContextMixin(abc.ABC):
     def get_extended_context(self) -> Dict:
         raise NotImplementedError
 
-class FeedbackForm(forms.Form):
-    name = forms.CharField(required=False)
-    comment = forms.CharField(required=False)
 
-    def insert_comment(self):
-
-        pass
-
-
-class FeedbackForm2(ModelForm):
-    '''name = forms.CharField(required=False)
-    comment = forms.CharField(required=False)
-    model = FeedbackModel'''
+class FeedbackForm(ModelForm):
     class Meta:
         model = FeedbackModel
         fields = ['name', 'comment']
 
-class FeedbackView(FormView):
-    form_class = FeedbackForm2
-    success_url = "/feedback/"
-    template_name = "feedback/index.html"
 
-    def form_valid(self, form):
-        form.save()
-        return super().form_valid(form)
-
-
-class FeedbackView2(ExtendedContextMixin, ListView):
+class FeedbackView(ExtendedContextMixin, ListView):
+    form_class = FeedbackForm
     template_name = "feedback/index.html"
     model = FeedbackModel
 
     def get_extended_context(self) -> Dict:
-        context = {"form": FeedbackForm2()}
-
+        context = {"form": FeedbackForm()}
         return context
+
+
+class NewFeedbackView(CreateView):
+    fields = ['name', 'comment']
+    http_method_names = ["post"]
+    model = FeedbackModel
+    success_url = "/feedback/"
+
+    def form_valid(self, form):
+        post = form.save(commit=False)
+        return super().form_valid(form)
 
 
 
