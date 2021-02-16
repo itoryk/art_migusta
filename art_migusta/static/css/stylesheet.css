@@ -44,7 +44,6 @@ h1{
 
 .headings {
     font-size: 20px;
-    width: 200px;
     margin-right: 5px;
     margin-left: 5px;
     text-align: center;
@@ -141,4 +140,8 @@ button{
     width: 100px;
     margin: 25px auto 0;
     text-transform: uppercase;
+}
+
+.center-img{
+     margin-top: 20px;
 }
