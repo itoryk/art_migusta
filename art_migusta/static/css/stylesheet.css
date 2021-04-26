@@ -1,7 +1,7 @@
 body{
     font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
     font-size: 23px;
-    background-color: bisque;
+    background-color: #FFFFFF;
     color: saddlebrown;
 }
 
@@ -12,11 +12,14 @@ body{
 }
 
 .logo{
+    width: 100%;
+    height: 100vh;
+
+
     background:
-    url("../image/logo.png") center
+    url("../image/logo.jpg") center
     no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
+    background-size: contain;
 }
 
 .block{
