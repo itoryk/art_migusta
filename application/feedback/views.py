@@ -44,7 +44,7 @@ class NewFeedbackView(CreateView):
     success_url = "/feedback/"
 
     def form_valid(self, form):
-        post = form.save(commit=False)
+        form.save(commit=False)
         return super().form_valid(form)
 
 
