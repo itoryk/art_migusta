@@ -9,24 +9,34 @@
 </head>
 
 <body>
-    <div class="logo">
-    <div class="aligned">
-            <h1>Migusta_Art 🎨</h1>
-        <div class="navigation">
-            <div class="link">
-                <div class="block"><a href="{% url 'landing:index' %}">Главная</a></div>
-                <div class="block"><a href="{% url 'illustration:index' %}">Иллюстрации</a></div>
-                <div class="block"><a href="{% url 'order:index' %}">Как заказать</a></div>
-                <div class="block"><a href="{% url 'feedback:index' %}">Отзывы</a></div>
+
+<header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_logo">Migusta_Art 🎨</div>
+
+                <nav class="nav">
+                    <a class="nav_link" href="{% url 'landing:index' %}">About</a>
+                    <a class="nav_link" href="{% url 'illustration:index' %}">Illustration</a>
+                    <a class="nav_link" href="{% url 'order:index' %}">Contact</a>
+                    <a class="nav_link" href="{% url 'feedback:index' %}">Feedback</a>
+                </nav>
             </div>
         </div>
+</header>
+
+<div class="logo">
+    <div class="container">
 
     </div>
+</div>
 
-        {% block main %}{% endblock %}
+{% block main %}{% endblock %}
 
-        <div class="foot">2021 Migusta_art</div>
 
-    </div>
+
+<div class="foot">2021 Migusta_art</div>
+
+
 </body>
 </html>

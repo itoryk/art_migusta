@@ -19,20 +19,64 @@ body{
     background:
     url("../image/logo.jpg") center
     no-repeat;
-    background-size: contain;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner{
+    display: compact;
+    justify-content: space-between;
+    align-items: normal;
+}
+
+.header_logo{
+    font-family: "Times New Roman";
+    font-size: 30px;
+    font-weight: 700;
+    color: #403737;
+
+}
+
+.nav{
+    font-size: 14px;
+     text-transform: uppercase;
+}
+
+.nav_link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    color: #403737;
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+.nav_link:hover{
+    color: #C09292;
+
 }
 
 .block{
     float: left;
     line-height: 50px;
     font-size: 20px;
-    background-color: darksalmon;
     color: #A68E8E;
     width: 200px;
     margin-right: 5px;
     margin-left: 5px;
     text-align: center;
 }
+
 
 .navigation{
     height: 50px;
@@ -41,7 +85,7 @@ body{
 h1{
     font-weight: bolder;
     text-align: left;
-    color: #A68E8E;
+    color: #403737;
     font-size: 28px;
     font-family: "Times New Roman";
 }
