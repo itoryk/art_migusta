@@ -1,12 +1,12 @@
 body{
-    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    font-family: "Times New Roman", cursive,sans-serif;
     font-size: 23px;
     background-color: #FFFFFF;
     color: saddlebrown;
 }
 
 .aligned{
-    width: 840px;
+    width: 800px;
     height: 800px;
     margin: 0px auto;
 }
@@ -27,7 +27,7 @@ body{
     line-height: 50px;
     font-size: 20px;
     background-color: darksalmon;
-    color: saddlebrown;
+    color: #A68E8E;
     width: 200px;
     margin-right: 5px;
     margin-left: 5px;
@@ -40,7 +40,10 @@ body{
 
 h1{
     font-weight: bolder;
-    text-align: center;
+    text-align: left;
+    color: #A68E8E;
+    font-size: 28px;
+    font-family: "Times New Roman";
 }
 
 .greeting{
