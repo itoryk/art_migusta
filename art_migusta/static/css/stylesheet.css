@@ -223,6 +223,50 @@ h1{
     background-size: contain;
 }
 
+.contacts{
+    width: 100%;
+    max-width: 950%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contacts_subtitle{
+    font-family: cursive;
+    font-size: 15px;
+    color: #333;
+}
+
+.contacts_title{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.contacts_title:after{
+    content: "";
+    display: block;
+    width: 160px;
+    height: 3px;
+    margin: 30px auto;
+
+    background-color: #C09292;
+}
+
+.services{
+    display: flex;
+    padding-top: 80px;
+}
+
+.services_item {
+    flex: 1 1 0;
+    padding-left: 90px;
+    padding-right: 20px;
+    position: relative;
+
+}
+
 .greeting{
     margin-left: 60px;
     margin-right: 10px;
