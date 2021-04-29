@@ -41,7 +41,7 @@ body{
 }
 
 .header_logo{
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", serif;
     font-size: 30px;
     font-weight: 700;
     color: #403737;
@@ -89,7 +89,7 @@ h1{
     text-align: left;
     color: #403737;
     font-size: 28px;
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", serif;
 }
 
 .section{
@@ -144,6 +144,38 @@ h1{
     padding-left: 9%;
     padding-top: 10%;
 }
+
+.statistics{
+    background-color: #C09292;
+}
+
+.stat{
+    display: flex;
+}
+
+.stat_item{
+    flex: 1 1 0;
+    padding: 70px 25px;
+    border-left: 1px solid #FAEAEA;
+    text-align: center;
+    color: #ffffff;
+}
+
+.stat_item:last-child{
+    border-right: 1px solid #FAEAEA;
+}
+
+.stat_count{
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.stat_text{
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1;
+ }
 
 .greeting{
     margin-left: 60px;
