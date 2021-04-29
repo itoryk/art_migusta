@@ -18,7 +18,7 @@
                 <nav class="nav">
                     <a class="nav_link" href="{% url 'landing:index' %}">About</a>
                     <a class="nav_link" href="{% url 'illustration:index' %}">Illustration</a>
-                    <a class="nav_link" href="{% url 'order:index' %}">Contact</a>
+                    <a class="nav_link" href="{% url 'order:index' %}">Contacts</a>
                     <a class="nav_link" href="{% url 'feedback:index' %}">Feedback</a>
                 </nav>
             </div>
@@ -30,6 +30,34 @@
 
     </div>
 </div>
+
+<section class="section">
+
+        <div class="container">
+            <div class="section_header">
+                <h3 class="section_subtitle">What I do</h3>
+                <h2 class="section_title">Story about me</h2>
+                <div class="section_text">
+                    <p>ghhfgjkgkhkljkl</p>
+                </div>
+            </div>
+
+            <div class="about">
+                <div class="about_item">
+                    <img alt = "logo" width="200" src="{% static 'image/about1.jpg' %}">
+                </div>
+                <div class="about_item">
+                    <img alt = "logo" width="200" src="{% static 'image/about2.jpg' %}">
+                </div>
+                <div class="about_item">
+                    <img alt = "logo" width="200" src="{% static 'image/about3.jpg' %}">
+                </div>
+
+            </div>
+
+        </div>
+
+</section>
 
 {% block main %}{% endblock %}
 

@@ -1,8 +1,8 @@
 body{
     font-family: "Times New Roman", cursive,sans-serif;
-    font-size: 23px;
+    font-size: 18px;
     background-color: #FFFFFF;
-    color: saddlebrown;
+    color: #1a1111;
 }
 
 .aligned{
@@ -90,6 +90,56 @@ h1{
     color: #403737;
     font-size: 28px;
     font-family: "Times New Roman";
+}
+
+.section{
+    padding: 80px 0;
+}
+
+.section_header{
+    width: 100%;
+    max-width: 950%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.section_subtitle{
+    font-family: cursive;
+    font-size: 15px;
+    color: #333;
+}
+
+.section_title{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.section_title:after{
+    content: "";
+    display: block;
+    width: 160px;
+    height: 3px;
+    margin: 30px auto;
+
+    background-color: #C09292;
+}
+
+.section_text{
+    font-size: 15px;
+    color: #999;
+}
+
+.about{
+    display: flex;justify-content: space-between;
+}
+
+.about_item{
+    width: 30%;
+
 }
 
 .greeting{
