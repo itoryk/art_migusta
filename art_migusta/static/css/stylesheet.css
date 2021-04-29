@@ -130,16 +130,19 @@ h1{
 
 .section_text{
     font-size: 15px;
+    text-align: center;
     color: #999;
 }
 
 .about{
-    display: flex;justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .about_item{
     width: 30%;
-
+    padding-left: 9%;
+    padding-top: 10%;
 }
 
 .greeting{
