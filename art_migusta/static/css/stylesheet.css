@@ -188,6 +188,7 @@ h1{
     padding-left: 90px;
     padding-right: 20px;
     position: relative;
+
 }
 
 .services_icon{
@@ -195,6 +196,10 @@ h1{
     top: 0;
     left:   0px;
     z-index: 1;
+
+
+    background-image: url("/../image/relationship.png");
+    background-repeat: no-repeat;
 }
 
 .services_title{
@@ -265,6 +270,14 @@ h1{
     padding-right: 20px;
     position: relative;
 
+
+}
+
+.services_icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .photo{
@@ -331,17 +344,6 @@ h1{
     color: #333333;
 }
 
-.greeting{
-    margin-left: 60px;
-    margin-right: 10px;
-}
-
-.headings {
-    font-size: 20px;
-    margin-right: 5px;
-    margin-left: 5px;
-    text-align: center;
-}
 
 .foot{
     margin: 150px;
