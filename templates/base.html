@@ -6,6 +6,7 @@
     <title>migusta_art</title>
     <link href="{% static 'css/stylesheet.css'%}" rel= "stylesheet"/>
     <link href="{% static 'img/logo2.png'%}" rel="icon" type="image/png"/>
+    <script src="https://kit.fontawesome.com/bd59fc7a90.js" crossorigin="anonymous"></script>
 </head>
 
 <header class="header">
@@ -133,18 +134,34 @@
 </div>
 
 <section class="contacts">
+
     <div class="container">
         <h3 class="contacts_subtitle">Contacts</h3>
         <h2 class="contacts_title">How can you contact me</h2>
     </div>
 
-
     <div class="photo">
-
         <div class="photo_item">
-            <img alt = "" width="1220" src="{% static 'image/photo.jpg' %}">
+            <div class="photo_img">
+                <img alt = "" width="1000" src="{% static 'image/photo.jpg' %}">
+            </div>
+            <div class="contacts_icon">
+                <div class="social">
+                    <a class="social_item" href="#" target="_blank">
+                <i class="fab fa-facebook"></i>
+                    </a>
+                    <a class="social_item" href="#" target="_blank">
+                <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="social_item" href="#" target="_blank">
+                <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a class="social_item" href="#" target="_blank">
+                <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-
     </div>
 
 </section>

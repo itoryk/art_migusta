@@ -267,6 +267,70 @@ h1{
 
 }
 
+.photo{
+    display: flex;
+    padding-left: 170px;
+}
+
+.photo_item{
+    width: 1000px;
+
+    position: relative;
+
+}
+
+.photo_item:hover .social_item{
+    opacity: 1;
+}
+
+.photo_item:hover .photo_img img{
+    opacity: .3;
+}
+
+.photo_img{
+    background: linear-gradient(to bottom, #ecd02c, #760891);
+}
+
+.photo_img img{
+    transition: opacity .1s linear;
+    display: block;
+}
+
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+
+}
+
+.social_item{
+    background-color: #AB68A0;
+    border-right: 1px solid #ffffff;
+    padding: 20px;
+
+    font-size: 50px;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 1;
+
+    opacity: 0;
+    transition: opacity .1s linear;
+}
+
+.social_item:last-child{
+    border-right: 1px solid #C09292;
+}
+
+.social_item:hover{
+    color: #333333;
+}
+
 .greeting{
     margin-left: 60px;
     margin-right: 10px;
