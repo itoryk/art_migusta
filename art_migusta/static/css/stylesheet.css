@@ -9,7 +9,7 @@ body{
 .aligned{
     width: 800px;
     height: 800px;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 .logo{
@@ -195,7 +195,7 @@ h1{
 .services_icon{
     position: absolute;
     top: 0;
-    left:   0px;
+    left: 0;
     z-index: 1;
 
 
@@ -263,6 +263,7 @@ h1{
 .services{
     display: flex;
     padding-top: 50px;
+    text-align: center;
 }
 
 .services_item {
@@ -345,6 +346,55 @@ h1{
     color: #333333;
 }
 
+.works {
+    display: flex;
+    text-align: center;
+}
+
+.works_col{
+    flex: 1 1 0;
+}
+
+.reviews{
+    padding: 0 110px;
+    position: relative;
+}
+
+.reviews_item{
+    padding-left: 205px;
+    position: relative;
+}
+
+.reviews_photo{
+    border: 2px solid #999999;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.reviews_text{
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1a1111;
+}
+
+.reviews_author{
+    font-family: cursive;
+    font-size: 24px;
+    color: #5b80b2;
+}
+
+
+
+
+
+
+
+
 
 .foot{
     margin: 150px;
@@ -399,7 +449,7 @@ h1{
 }
 
 .comment-text{
-    margin-top: 0px;
+    margin-top: 0;
     font-size: 17px;
     margin-bottom: 5px;
     padding: 10px;
