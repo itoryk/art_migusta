@@ -1,6 +1,8 @@
 {% load static %}
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>migusta_art</title>
@@ -15,14 +17,16 @@
                 <div class="header_logo">Migusta_Art 🎨</div>
 
                 <nav class="nav">
-                    <a class="nav_link" href="{% url 'landing:index' %}">About</a>
-                    <a class="nav_link" href="{% url 'illustration:index' %}">Illustration</a>
-                    <a class="nav_link" href="{% url 'order:index' %}">Contacts</a>
-                    <a class="nav_link" href="{% url 'feedback:index' %}">Feedback</a>
+                    <a class="nav_link" href="{% url 'landing:index' %}" target="_blank">About</a>
+                    <a class="nav_link" href="{% url 'illustration:index' %}" target="_blank">Illustration</a>
+                    <a class="nav_link" href="{% url 'order:index' %}" target="_blank">Contacts</a>
+                    <a class="nav_link" href="{% url 'feedback:index' %}" target="_blank">Feedback</a>
                 </nav>
             </div>
         </div>
 </header>
+
+<body>
 
 <div class="logo">
     <div class="container">

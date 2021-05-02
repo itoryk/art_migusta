@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Отзывы{% endblock %}
+
+{% block main %}
+
+    <div class="feedback">
+        <p>Здесь вы можете оставить свой отзыв.</p>
+    </div>
+
+    <div class="comment">
+        <p class="comment-name">Valera</p>
+        <p class="comment-time">Feb, 3, 12:01</p>
+        <p class="comment-text">vse horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebno se horosho otlichno volshebn </p>
+    </div>
+
+    {% for object in object_list %}
+        <div class="comment">
+            <p class="comment-name">{{ object.name }}</p>
+            <p class="comment-time">Feb, 3, 12:01</p>
+            <p class="comment-text">{{ object.comment }}</p>
+        </div>
+    {% endfor %}
+
+    <form method="post" action="/feedback/new/">
+        {% csrf_token %}
+        <div>
+            {{ form.content }}
+            <label for="name">Имя</label>
+            <input type="text" name="name" required>
+        </div>
+        <div>
+            <label for="text">Отзыв</label>
+            <input type="text" name="comment" required>
+        </div>
+        <button type="submit">Отправить</button>
+    </form>
+
+{% endblock %}
